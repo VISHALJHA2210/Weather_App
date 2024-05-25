@@ -6,6 +6,8 @@
 }
 body{
     /* background-color: #222; */
+    height: 100%;
+    width:100%;
     background-image: url("https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
@@ -39,6 +41,7 @@ body{
     flex:1;
     margin-right:16px;
     font-size:18px;
+    
 }
 
 .search button{
@@ -111,4 +114,45 @@ body{
     font-weight: 900;
     margin-top: 30px;
     display:none;
+}
+
+@media (max-width:600px) {
+    .card{
+        width:90%;
+    }
+
+    .search input{
+        width:100%;
+    }
+
+    .search input::placeholder{
+        font-size:17px;
+    }
+
+    .weather-icon{
+        width:120px;
+    }
+
+    .weather h1{
+        font-size: 60px;
+    }
+    
+    .weather h2{
+        font-size: 40px;
+    }
+
+    .col img{
+        width: 40px;
+    }
+
+    .col p{
+        font-size: 20px;
+        margin-right:10px;
+        margin-left:-10px;
+    }
+
+    .details{
+        margin-top:20px;
+    }
+    
 }
